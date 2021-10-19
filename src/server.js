@@ -12,11 +12,11 @@ app.listen(process.env.PORT || 3000, function() {
 
 const redisClient = redis.createClient(
     10337,
-    "redis-10337.c264.ap-south-1-1.ec2.cloud.redislabs.com",
+    "",
     { no_ready_check: true }
 );
 
-redisClient.auth("6L8SXmAlBLG8Z55VsrQtoTd1ugZZ6Qci", function (err) {
+redisClient.auth("", function (err) {
     if (err) throw err;
 });
 
